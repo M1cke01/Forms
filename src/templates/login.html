@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="{% static 'forms_test/css/login.css' %}">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¡Bienvenido, {{ user.username }}!</h1>
+        <p>Gracias por registrarte en nuestra plataforma.</p>
+        <a href="{% url 'forms' %}" class="btn">Iniciar sesión</a>
+    </div>
+</body>
+</html>
